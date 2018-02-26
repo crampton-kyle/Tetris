@@ -55,7 +55,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Main Function
 
-(define (main who-gives-a-fuck)
+;; Any -> World
+;; launches and maintains the Tetris Gameplay
+(define (main _)
   (big-bang INITIAL-WORLD
             [to-draw render]
             [on-key shift-tetra]
